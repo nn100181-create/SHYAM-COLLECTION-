@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="SHYAM COLLECTION JAIPUR — पुरुषों, महिलाओं और बच्चों के कपड़े">
+<title>SHYAM COLLECTION JAIPUR | Fashion for Every Generation</title>
+<style>
+:root{--gold:#c88a12;--ink:#18222d;--cream:#fff8ec;--muted:#667085;--line:#e9e5de}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;color:var(--ink);background:#fff}
+a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}
+.topbar{background:#202a35;color:#fff;padding:9px 5%;font-size:12px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+header{padding:18px 5%;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}.logo{width:52px;height:52px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-family:Georgia,serif;font-size:24px;font-weight:bold;color:var(--gold)}
+.brand h1{font-family:Georgia,serif;font-size:clamp(21px,3vw,32px);margin:0;letter-spacing:1px}.brand p{margin:3px 0 0;color:var(--muted);font-size:13px}
+.search{display:flex;min-width:220px;flex:1;max-width:380px}.search input{width:100%;padding:12px;border:1px solid #ddd;border-radius:7px 0 0 7px}.search button{background:var(--ink);color:white;border:0;padding:0 16px;border-radius:0 7px 7px 0}
+.header-links{display:flex;gap:14px;font-size:13px;align-items:center}
+nav{padding:13px 5%;display:flex;gap:26px;flex-wrap:wrap;border-bottom:1px solid var(--line);font-weight:600;font-size:14px}
+nav a:hover{color:var(--gold)}
+.hero{margin:18px auto 0;width:calc(100% - 32px);min-height:320px;border-radius:12px;overflow:hidden;background:linear-gradient(90deg,rgba(255,248,236,.97),rgba(255,248,236,.86) 43%,rgba(255,248,236,.12)),url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1800&q=85') center/cover;display:flex;align-items:center;padding:clamp(24px,6vw,70px)}
+.hero-copy{max-width:520px}.eyebrow{color:var(--gold);font-weight:bold;letter-spacing:3px;text-transform:uppercase}.hero h2{font: bold clamp(36px,5vw,62px)/1.02 Georgia,serif;margin:12px 0}.hero h2 span{color:var(--gold)}.hero p{font-size:18px;line-height:1.6}.btn{display:inline-block;background:var(--gold);color:white;padding:13px 20px;border:0;border-radius:6px;font-weight:bold}.btn:hover{filter:brightness(.93)}
+section{padding:34px 5%}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:18px}.section-head h2{margin:0;font-size:26px}.section-head p{margin:5px 0 0;color:var(--muted)}
+.categories{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.category{border:1px solid var(--line);border-radius:10px;overflow:hidden;text-align:center;padding-bottom:14px;background:#fff}.category img{width:100%;height:150px;object-fit:cover}.category h3{font-size:15px;margin:12px 4px 5px}.category p{font-size:12px;color:var(--muted);margin:0 5px 10px}.small-btn{border:1px solid #bbb;border-radius:20px;background:#fff;padding:7px 15px;font-size:12px}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{border:1px solid var(--line);border-radius:10px;overflow:hidden;position:relative;background:white}.product img{width:100%;height:260px;object-fit:cover;background:var(--cream)}.tag{position:absolute;top:12px;left:12px;background:#e74c3c;color:white;font-size:11px;padding:6px 8px;border-radius:4px;font-weight:bold}.product-info{padding:13px}.product h3{margin:0 0 5px;font-size:16px}.product .sub{margin:0 0 10px;color:var(--muted);font-size:13px}.price{font-weight:bold;color:#d33;font-size:18px}.old{color:#999;text-decoration:line-through;font-size:12px;margin-left:7px}.product select{width:100%;margin:10px 0;padding:9px;border:1px solid #ddd;border-radius:5px;background:white}.product .btn{width:100%;padding:10px;font-size:13px}
+.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;background:#f7f8fa;border-radius:10px;padding:20px 5%;margin:0 5% 28px}.benefit{text-align:center;padding:8px}.benefit strong{display:block;margin:7px 0}.benefit span{font-size:12px;color:var(--muted)}
+footer{background:#18222d;color:white;padding:32px 5% 15px}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1.5fr 1fr;gap:24px}.footer-grid h3{margin-top:0}.footer-grid p,.footer-grid a{font-size:13px;color:#d3d8df;line-height:1.8}.footer-grid a{display:block}.copyright{border-top:1px solid #39434d;margin-top:22px;padding-top:14px;text-align:center;color:#c4cbd3;font-size:12px}
+.whatsapp{position:fixed;right:18px;bottom:18px;background:#20b85a;color:white;border-radius:30px;padding:13px 17px;box-shadow:0 5px 18px #0003;font-weight:bold;z-index:5}
+.notice{margin:16px 5%;padding:12px 15px;background:#fff7e5;border:1px solid #f1d69a;border-radius:8px;font-size:13px;line-height:1.5}
+@media(max-width:900px){.categories{grid-template-columns:repeat(3,1fr)}.products{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}.hero{min-height:280px}}
+@media(max-width:560px){.topbar{font-size:11px}header{align-items:flex-start}.search{order:3;max-width:none;flex-basis:100%}.header-links{font-size:12px}nav{gap:15px;font-size:13px}.hero{width:calc(100% - 20px);padding:22px;min-height:300px;background-position:58% center}.hero-copy{max-width:78%}.hero p{font-size:15px}.categories{grid-template-columns:repeat(2,1fr)}.category img{height:125px}.products{gap:10px}.product img{height:190px}.product-info{padding:10px}.product h3{font-size:14px}.price{font-size:16px}.benefits{grid-template-columns:repeat(2,1fr);margin:0 10px 20px;padding:12px}.footer-grid{grid-template-columns:1fr}.section-head h2{font-size:22px}}
+</style>
+</head>
+<body>
+<div class="topbar"><span>🚚 पूरे जयपुर में डिलीवरी की सुविधा</span><span>↩ वापसी की शर्तें लागू · 🔒 सुरक्षित खरीदारी</span><span>📍 Jaipur, Rajasthan</span></div>
+<header>
+  <a class="brand" href="#" aria-label="SHYAM COLLECTION home"><div class="logo">SC</div><div><h1>SHYAM <span style="color:var(--gold)">COLLECTION</span></h1><p>Fashion for Every Generation · Jaipur</p></div></a>
+  <form class="search" onsubmit="event.preventDefault(); searchProducts();"><input id="searchInput" placeholder="कपड़ों की खोज करें..." aria-label="कपड़े खोजें"><button type="submit" aria-label="Search">⌕</button></form>
+  <div class="header-links"><a href="#contact">संपर्क</a><a href="#products">🛍️ खरीदारी</a></div>
+</header>
+<nav><a href="#">होम</a><a href="#men">पुरुष</a><a href="#women">महिला</a><a href="#kids">बच्चे</a><a href="#products">नए आगमन</a><a href="#products">सेल</a><a href="#contact">हमारे बारे में</a></nav>
+<main>
+  <div class="hero"><div class="hero-copy"><div class="eyebrow">Jaipur • New Collection</div><h2>SHYAM<br><span>COLLECTION</span></h2><p>स्टाइल भी… क्वालिटी भी…<br>हर मौके के लिए परफेक्ट कपड़े</p><a class="btn" href="#products">अभी खरीदें&nbsp; →</a></div></div>
+  <div class="notice"><strong>वेबसाइट सेटअप:</strong> यह आपकी शुरुआती वेबसाइट है। अभी दिखाए गए कपड़ों और कीमतों को नमूना समझें—अपनी असली फोटो, स्टॉक, फोन नंबर और नीतियाँ डालने के बाद ही ग्राहकों को शेयर करें।</div>
+  <section id="categories"><div class="section-head"><div><h2>अपनी पसंद चुनें</h2><p>हर उम्र और हर मौके के लिए</p></div></div>
+    <div class="categories">
+      <a class="category" id="men" href="#products"><img loading="lazy" src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=600&q=80" alt="पुरुषों के कपड़े"><h3>पुरुषों के कपड़े</h3><p>शर्ट, टी-शर्ट, जींस</p><button class="small-btn">देखें →</button></a>
+      <a class="category" id="women" href="#products"><img loading="lazy" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80" alt="महिलाओं के कपड़े"><h3>महिलाओं के कपड़े</h3><p>कुर्ती, सूट, साड़ी</p><button class="small-btn">देखें →</button></a>
+      <a class="category" id="kids" href="#products"><img loading="lazy" src="https://images.unsplash.com/photo-1519238263530-99?auto=format&fit=crop&w=600&q=80" alt="बच्चों के कपड़े" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1503919005314-30d93d07d823?auto=format&fit=crop&w=600&q=80'"><h3>बच्चों के कपड़े</h3><p>आरामदायक रोज़ाना पहनावा</p><button class="small-btn">देखें →</button></a>
+      <a class="category" href="#products"><img loading="lazy" src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=600&q=80" alt="एथनिक वियर"><h3>एथनिक वियर</h3><p>त्योहार और शादी</p><button class="small-btn">देखें →</button></a>
+      <a class="category" href="#products"><img loading="lazy" src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=600&q=80" alt="जैकेट"><h3>विंटर वियर</h3><p>जैकेट और स्वेटर</p><button class="small-btn">देखें →</button></a>
+      <a class="category" href="#products"><img loading="lazy" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" alt="एक्सेसरीज़"><h3>एक्सेसरीज़</h3><p>स्टाइल को पूरा करें</p><button class="small-btn">देखें →</button></a>
+    </div>
+  </section>
+  <section id="products"><div class="section-head"><div><h2>नए आगमन</h2><p>SHYAM COLLECTION की पसंदीदा स्टाइल</p></div><a href="#products">सभी देखें →</a></div>
+    <div class="products" id="productGrid">
+      <article class="product" data-name="mens casual shirt पुरुष शर्ट"><span class="tag">नया</span><img loading="lazy" src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=700&q=80" alt="पुरुषों की कैजुअल शर्ट"><div class="product-info"><h3>Men's Casual Shirt</h3><p class="sub">पुरुषों की कैजुअल शर्ट</p><span class="price">₹799</span><span class="old">₹999</span><select aria-label="साइज चुनें"><option value="">साइज चुनें</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select><button class="btn" onclick="orderProduct(this)">WhatsApp पर ऑर्डर करें</button></div></article>
+      <article class="product" data-name="womens kurti महिला कुर्ती"><span class="tag">लोकप्रिय</span><img loading="lazy" src="https://images.unsplash.com/photo-1583391733956-6c78276477e5?auto=format&fit=crop&w=700&q=80" alt="महिलाओं की कुर्ती"><div class="product-info"><h3>Women's Kurti</h3><p class="sub">महिलाओं की कुर्ती</p><span class="price">₹849</span><span class="old">₹999</span><select aria-label="साइज चुनें"><option value="">साइज चुनें</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select><button class="btn" onclick="orderProduct(this)">WhatsApp पर ऑर्डर करें</button></div></article>
+      <article class="product" data-name="boys tshirt kids बच्चों टी शर्ट"><span class="tag">नया</span><img loading="lazy" src="https://images.unsplash.com/photo-1503919005314-30d93d07d823?auto=format&fit=crop&w=700&q=80" alt="बच्चों की टी शर्ट"><div class="product-info"><h3>Kids' T-Shirt</h3><p class="sub">बच्चों की टी-शर्ट</p><span class="price">₹449</span><span class="old">₹599</span><select aria-label="साइज चुनें"><option value="">साइज चुनें</option><option>2–3 साल</option><option>4–5 साल</option><option>6–8 साल</option><option>9–12 साल</option></select><button class="btn" onclick="orderProduct(this)">WhatsApp पर ऑर्डर करें</button></div></article>
+      <article class="product" data-name="girls frock बच्चियों फ्रॉक"><span class="tag">स्टाइलिश</span><img loading="lazy" src="https://images.unsplash.com/photo-1519238263530-99 shares?auto=format&fit=crop&w=700&q=80" alt="बच्चियों की फ्रॉक"><div class="product-info"><h3>Girls' Frock</h3><p class="sub">बच्चियों की फ्रॉक</p><span class="price">₹799</span><span class="old">₹999</span><select aria-label="साइज चुनें"><option value="">साइज चुनें</option><option>2–3 साल</option><option>4–5 साल</option><option>6–8 साल</option><option>9–12 साल</option></select><button class="btn" onclick="orderProduct(this)">WhatsApp पर ऑर्डर करें</button></div></article>
+      <article class="product" data-name="mens jeans जींस"><img loading="lazy" src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=700&q=80" alt="पुरुषों की जींस"><div class="product-info"><h3>Men's Jeans</h3><p class="sub">डेनिम जींस</p><span class="price">₹1,099</span><span class="old">₹1,299</span><select aria-label="साइज चुनें"><option value="">साइज चुनें</option><option>28</option><option>30</option><option>32</option><option>34</option><option>36</option></select><button class="btn" onclick="orderProduct(this)">WhatsApp पर ऑर्डर करें</button></div></article>
+      <article class="product" data-name="saree साड़ी"><img loading="lazy" src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80" alt="साड़ी"><div class="product-info"><h3>Ethnic Saree</h3><p class="sub">एथनिक साड़ी</p><span class="price">₹1,799</span><span class="old">₹1,999</span><select aria-label="साइज चुनें"><option value="">विकल्प चुनें</option><option>रंग/डिज़ाइन पूछें</option></select><button class="btn" onclick="orderProduct(this)">WhatsApp पर ऑर्डर करें</button></div></article>
+      <article class="product" data-name="mens jacket जैकेट"><img loading="lazy" src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=700&q=80" alt="जैकेट"><div class="product-info"><h3>Casual Jacket</h3><p class="sub">कैजुअल जैकेट</p><span class="price">₹1,499</span><span class="old">₹1,799</span><select aria-label="साइज चुनें"><option value="">साइज चुनें</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select><button class="btn" onclick="orderProduct(this)">WhatsApp पर ऑर्डर करें</button></div></article>
+      <article class="product" data-name="women suit सूट"><img loading="lazy" src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=700&q=80" alt="महिलाओं का सूट"><div class="product-info"><h3>Women's Ethnic Wear</h3><p class="sub">एथनिक वियर</p><span class="price">₹1,299</span><span class="old">₹1,599</span><select aria-label="साइज चुनें"><option value="">साइज चुनें</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select><button class="btn" onclick="orderProduct(this)">WhatsApp पर ऑर्डर करें</button></div></article>
+    </div>
+  </section>
+  <div class="benefits"><div class="benefit">🚚<strong>डिलीवरी</strong><span>डिलीवरी उपलब्धता पूछें</span></div><div class="benefit">↩<strong>वापसी नीति</strong><span>दुकान की शर्तें लागू</span></div><div class="benefit">🔐<strong>सुरक्षित ऑर्डर</strong><span>WhatsApp पर ऑर्डर विवरण</span></div><div class="benefit">⭐<strong>SHYAM COLLECTION</strong><span>जयपुर, राजस्थान</span></div></div>
+</main>
+<footer id="contact"><div class="footer-grid"><div><div class="brand"><div class="logo">SC</div><div><h3 style="margin:0">SHYAM COLLECTION</h3><p>Jaipur, Rajasthan</p></div></div><p>हर मौके के लिए आपकी फैशन शॉप। असली उत्पाद विवरण और दुकान की जानकारी यहाँ जोड़ें।</p></div><div><h3>Quick Links</h3><a href="#">होम</a><a href="#men">पुरुष</a><a href="#women">महिला</a><a href="#kids">बच्चे</a><a href="#products">नए आगमन</a></div><div><h3>संपर्क करें</h3><p>📍 Jaipur, Rajasthan, India</p><p>📱 अपना फोन नंबर जोड़ें</p><p>✉️ अपना ईमेल जोड़ें</p></div><div><h3>जानकारी</h3><a href="#contact">हमारे बारे में</a><a href="#contact">डिलीवरी नीति</a><a href="#contact">रिटर्न / रिफंड</a><a href="#contact">प्राइवेसी पॉलिसी</a></div></div><div class="copyright">© <span id="year"></span> SHYAM COLLECTION JAIPUR. सर्वाधिकार सुरक्षित।</div></footer>
+<a class="whatsapp" href="#products" onclick="event.preventDefault(); alert('WhatsApp ऑर्डर चालू करने के लिए नीचे दिए गए निर्देशों में अपना WhatsApp नंबर सेट करें।');">☏ WhatsApp ऑर्डर</a>
+<script>
+const WHATSAPP_NUMBER = ""; // अपना नंबर country code सहित लिखें, जैसे 919876543210 (केवल अंक)
+document.getElementById('year').textContent = new Date().getFullYear();
+function searchProducts(){
+ const q=document.getElementById('searchInput').value.trim().toLowerCase();
+ document.querySelectorAll('.product').forEach(p=>p.style.display=p.dataset.name.toLowerCase().includes(q)?'':'none');
+ document.getElementById('products').scrollIntoView({behavior:'smooth'});
+}
+function orderProduct(btn){
+ const card=btn.closest('.product'), title=card.querySelector('h3').innerText, price=card.querySelector('.price').innerText, size=card.querySelector('select').value;
+ if(!size){alert('कृपया पहले साइज/विकल्प चुनें।');return;}
+ if(!WHATSAPP_NUMBER){alert('ऑर्डर बटन चालू करने के लिए वेबसाइट की HTML फाइल में WHATSAPP_NUMBER में अपना WhatsApp नंबर डालें।');return;}
+ const message=`नमस्ते SHYAM COLLECTION, मुझे यह प्रोडक्ट ऑर्डर करना है:%0Aप्रोडक्ट: ${encodeURIComponent(title)}%0Aकीमत: ${encodeURIComponent(price)}%0Aसाइज/विकल्प: ${encodeURIComponent(size)}%0Aकृपया उपलब्धता और डिलीवरी बताएं।`;
+ window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`,'_blank','noopener');
+}
+</script>
+</body>
+</html>
