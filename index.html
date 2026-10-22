@@ -77,7 +77,7 @@ function searchProducts(){
 }
 function orderProduct(btn){
  const card=btn.closest('.product'), title=card.querySelector('h3').innerText, price=card.querySelector('.price').innerText, size=card.querySelector('select').value;
- if(!size){alert('कृपया पहले साइज/विकल्प चुनें।');return;}
+ if(!size){t('33');return;}
  if(!WHATSAPP_NUMBER){alert('ऑर्डर बटन चालू करने के लिए वेबसाइट की HTML फाइल में WHATSAPP_NUMBER में अपना WhatsApp नंबर डालें।');return;}
  const message=`नमस्ते SHYAM COLLECTION, मुझे यह प्रोडक्ट ऑर्डर करना है:%0Aप्रोडक्ट: ${encodeURIComponent(title)}%0Aकीमत: ${encodeURIComponent(price)}%0Aसाइज/विकल्प: ${encodeURIComponent(size)}%0Aकृपया उपलब्धता और डिलीवरी बताएं।`;
  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`,'_blank','noopener');
